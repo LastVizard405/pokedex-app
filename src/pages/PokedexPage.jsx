@@ -13,7 +13,7 @@ const PokedexPage = () => {
 	const [pokemons, getPokemons, getTypePokemons] = useFetch();
 	const [searchedName, setSearchedName] = useState('');
 	const [typeSelected, setTypeSelected] = useState('allPokemons');
-	const [itemOffset, setItemOffset] = useState(1);
+	const [itemOffset, setItemOffset] = useState(0);
 
 	useEffect(() => {
 		if (typeSelected === 'allPokemons') {
